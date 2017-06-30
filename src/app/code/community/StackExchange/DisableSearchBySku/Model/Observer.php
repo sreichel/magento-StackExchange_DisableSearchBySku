@@ -7,7 +7,7 @@
  * @package     StackExchange_DisableSearchBySku
  */
 
-class StackExchange_DisableSearchBySku_Model_Observer
+class StackExchange_DisableSearchBySku_Model_Observer extends Mage_Core_Model_Observer
 {
     //the product list block name in layout
     const RESULT_BLOCK_NAME = 'search_result_list';
@@ -20,7 +20,7 @@ class StackExchange_DisableSearchBySku_Model_Observer
      */
     public function disableSkuSearch(Varien_Event_Observer $observer)
     {
-        if (Mage::getStoreConfigFlag('catalog/frontend/disable_sku_search')) {
+        if (Mage::getStoreConfigFlag('catalog/frontend/disable_search')) {
             /** @var Mage_Catalog_Block_Product_List $block */
             $block = Mage::app()->getLayout()->getBlock(self::RESULT_BLOCK_NAME);
             if ($block) {
