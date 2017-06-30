@@ -24,7 +24,7 @@ class StackExchange_DisableSearchBySku_Model_Observer
             /** @var Mage_Catalog_Block_Product_List $block */
             $block = Mage::app()->getLayout()->getBlock(self::RESULT_BLOCK_NAME);
             if ($block) {
-                if ($collection = $block->getLoadedProductCollection();) {
+                if ($collection = $block->getLoadedProductCollection()) {
                     $query = Mage::app()->getRequest()->getParam('q');
                     $collection->addFieldToFilter('sku', array('nlike' => "%{$query}%"));
                 }
