@@ -2,7 +2,7 @@
 <config>
     <modules>
         <StackExchange_DisableSearchBySku>
-            <version>1.0.0</version>
+            <version>1.0.1</version>
         </StackExchange_DisableSearchBySku>
     </modules>
     <global>
@@ -39,6 +39,17 @@
             </controller_action_layout_render_before_catalogsearch_advanced_result>
         </events>
     </frontend>
+    <adminhtml>
+        <translate>
+            <modules>
+                <stackexchange_disablesearchbysku>
+                    <files>
+                        <default>StackExchange_DisableSearchBySku.csv</default>
+                    </files>
+                </stackexchange_disablesearchbysku>
+            </modules>
+        </translate>
+    </adminhtml>
     <default>
         <catalog>
             <frontend>
