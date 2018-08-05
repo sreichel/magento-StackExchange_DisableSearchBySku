@@ -7,7 +7,7 @@
  * @package     StackExchange_DisableSearchBySku
  */
 
-class StackExchange_DisableSearchBySku_Model_Observer extends Mage_Core_Model_Observer
+class StackExchange_DisableSearchBySku_Model_Observer
 {
     //the product list block name in layout
     const RESULT_BLOCK_NAME = 'search_result_list';
