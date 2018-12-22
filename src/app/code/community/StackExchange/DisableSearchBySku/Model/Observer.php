@@ -7,9 +7,15 @@
  * @package     StackExchange_DisableSearchBySku
  */
 
+/**
+ * Class StackExchange_DisableSearchBySku_Model_Observer
+ * @SuppressWarnings(PHPMD.CamelCaseClassName)
+ */
 class StackExchange_DisableSearchBySku_Model_Observer
 {
-    //the product list block name in layout
+    /**
+     * The product list block name in layout
+     */
     const RESULT_BLOCK_NAME = 'search_result_list';
 
     /**
@@ -17,6 +23,8 @@ class StackExchange_DisableSearchBySku_Model_Observer
      *
      * @param Varien_Event_Observer $observer
      * @return void
+     * @SuppressWarnings(PHPMD.StaticAccess)
+     * @SuppressWarnings(PHPMD.UnusedFormalParameter)
      */
     public function disableSkuSearch(Varien_Event_Observer $observer)
     {
@@ -24,9 +32,10 @@ class StackExchange_DisableSearchBySku_Model_Observer
             /** @var Mage_Catalog_Block_Product_List $block */
             $block = Mage::app()->getLayout()->getBlock(self::RESULT_BLOCK_NAME);
             if ($block) {
-                if ($collection = $block->getLoadedProductCollection()) {
+                $collection = $block->getLoadedProductCollection();
+                if ($collection) {
                     $query = Mage::app()->getRequest()->getParam('q');
-                    $collection->addFieldToFilter('sku', array('nlike' => "%{$query}%"));
+                    $collection->addFieldToFilter('sku', ['nlike' => "%{$query}%"]);
                 }
             }
         }
