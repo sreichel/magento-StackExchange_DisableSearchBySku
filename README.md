@@ -1,4 +1,4 @@
-# StackExchange DisableSearchBySku Magento 1 Extension
+# DisableSearchBySku Magento 1 Extension
 
 This extension adds availability to disable search by SKU, even when SKU is globally set to searchable.
 
