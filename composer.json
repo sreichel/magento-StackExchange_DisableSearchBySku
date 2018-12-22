@@ -1,5 +1,5 @@
 {
-    "name": "mse-sv3n/disable-search-by-sku",
+    "name": "mse-sv3n/m1-disable-search-by-sku",
     "type": "magento-module",
     "license": "OSL-3.0",
     "description": "This extension adds availability to disable search by SKU, even when SKU is globally set to searchable.",

@@ -34,7 +34,7 @@ modman clone https://github.com/sreichel/magento-StackExchange_DisableSearchBySk
 ```
 - via composer
 ```
-composer require mse-sv3n/disable-search-by-sku
+composer require mse-sv3n/m1-disable-search-by-sku
 ```
 
 #### Uninstallation
@@ -44,7 +44,7 @@ modman remove magento-stackexchange-disablesearchbysku
 ```
 - via composer
 ```
-composer remove mse-sv3n/disable-search-by-sku
+composer remove mse-sv3n/m1-disable-search-by-sku
 ```
 
 ### Usage
