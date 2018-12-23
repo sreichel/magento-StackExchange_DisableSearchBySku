@@ -2,7 +2,7 @@
     "name": "mse-sv3n/m1-disable-search-by-sku",
     "type": "magento-module",
     "license": "OSL-3.0",
-    "description": "This extension adds availability to disable search by SKU, even when SKU is globally set to searchable.",
+    "description": "Disable search by SKU, even when SKU is globally set to searchable.",
     "homepage": "https://magento.stackexchange.com/questions/173804/how-to-disable-search-by-sku-for-specific-store",
     "authors": [
         {
